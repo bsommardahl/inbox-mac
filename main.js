@@ -5,17 +5,17 @@ const globalShortcut = electron.globalShortcut;
 
 const template = [
   {
-    label: 'Calendar',
+    label: 'Inbox',
     submenu: [
       {
-        label: 'About Calendar',
+        label: 'About Inbox',
         selector: 'orderFrontStandardAboutPanel:'
       },
       {
         type: 'separator'
       },
       {
-        label: 'Hide Calendar',
+        label: 'Hide Inbox',
         accelerator: 'CmdOrCtrl+H',
         click: function() {mainWindow.hide();}
       },
@@ -23,7 +23,7 @@ const template = [
         type: 'separator'
       },
       {
-        label: 'Quit Calendar',
+        label: 'Quit Inbox',
         accelerator: 'CmdOrCtrl+Q',
         click: function() {force_quit=true; app.quit();}
       },
@@ -135,8 +135,8 @@ const template = [
     role: 'help',
     submenu: [
       {
-        label: 'Calendar on GitHub',
-        click: function() { require('electron').shell.openExternal('https://github.com/wr/gcal-mac') }
+        label: 'Inbox on GitHub',
+        click: function() { require('electron').shell.openExternal('https://github.com/bsommardahl/inbox-mac') }
       },
     ]
   }
@@ -165,8 +165,8 @@ let win;
 function createWindow() {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 2000,
-    height: 1200,
+    width: 1500,
+    height: 900,
     minWidth: 900,
     minHeight: 550,
     webPreferences: {
@@ -177,7 +177,7 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  win.loadURL('https://calendar.google.com/calendar');
+  win.loadURL('https://inbox.google.com');
 
   // Open the DevTools.
   //win.webContents.openDevTools();
