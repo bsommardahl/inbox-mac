@@ -1,8 +1,8 @@
-# Google Calendar for macOS (unofficial)
+# Google Inbox for macOS (unofficial)
 
-This is an [Electron](https://github.com/atom/electron) wrapper for Google Calendar. It lets you install Gcal on your Mac and easily access it from the Dock instead of your web browser.
+This is an [Electron](https://github.com/atom/electron) wrapper for Google Inbox. It lets you install Gcal on your Mac and easily access it from the Dock instead of your web browser.
 
-It also works with Google Calendar's desktop notification setting, so it feels like a pretty native app :)
+It also works with Google Inbox's desktop notification setting, so it feels like a pretty native app :)
 
 ## Caveats
 
